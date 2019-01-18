@@ -1,0 +1,1 @@
+// AgcBarleyHarvestLoss: CommonJS Main

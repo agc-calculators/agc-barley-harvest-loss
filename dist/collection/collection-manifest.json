@@ -1,0 +1,132 @@
+{
+  "components": [
+    {
+      "tag": "agc-barley-harvest-loss",
+      "dependencies": [],
+      "componentClass": "AgcBarleyHarvestLoss",
+      "componentPath": "components/agc-barley-harvest-loss/agc-barley-harvest-loss.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "mode",
+          "type": "String",
+          "attr": "mode"
+        },
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        },
+        {
+          "name": "tract",
+          "type": "String",
+          "attr": "tract"
+        },
+        {
+          "name": "units",
+          "type": "Any",
+          "attr": "units"
+        }
+      ],
+      "states": [
+        {
+          "name": "cache"
+        },
+        {
+          "name": "currentStep"
+        },
+        {
+          "name": "results"
+        },
+        {
+          "name": "submitted"
+        }
+      ],
+      "events": [
+        {
+          "event": "agcCalculated"
+        },
+        {
+          "event": "agcStepChanged"
+        }
+      ]
+    },
+    {
+      "tag": "agc-barley-harvest-loss-inputs",
+      "dependencies": [],
+      "componentClass": "AgcBarleyHarvestLossInputs",
+      "componentPath": "components/agc-barley-harvest-loss-inputs/agc-barley-harvest-loss-inputs.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-barley-harvest-loss-progress",
+      "dependencies": [],
+      "componentClass": "AgcBarleyHarvestLossProgress",
+      "componentPath": "components/agc-barley-harvest-loss-progress/agc-barley-harvest-loss-progress.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "currentStep"
+        }
+      ]
+    },
+    {
+      "tag": "agc-barley-harvest-loss-results",
+      "dependencies": [],
+      "componentClass": "AgcBarleyHarvestLossResults",
+      "componentPath": "components/agc-barley-harvest-loss-results/agc-barley-harvest-loss-results.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-barley-harvest-loss-results-placeholder",
+      "dependencies": [],
+      "componentClass": "AgcBarleyHarvestLossResultsPlaceholder",
+      "componentPath": "components/agc-barley-harvest-loss-results-placeholder/agc-barley-harvest-loss-results-placeholder.js",
+      "styles": {}
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.15.2",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}
